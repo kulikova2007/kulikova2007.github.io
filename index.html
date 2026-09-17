@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Задание 1 — Ссылки и форма</title>
+</head>
+
+<body>
+
+  <h1>Нумерованный список гиперссылок</h1>
+
+  <ol>
+
+    <li>
+      Абсолютная ссылка на главную страницу сайта (http):
+      <a href="http://kubsu.ru/">КубГУ</a>
+    </li>
+
+    <li>
+      Абсолютная ссылка на главную страницу сайта (https):
+      <a href="https://kubsu.ru/">КубГУ (https)</a>
+    </li>
+
+    <li>
+      Ссылка-изображение:
+      <a href="https://kubsu.ru/">
+        <img src="image.jpg" alt="Цветок" style="width: 100px;" />
+      </a>
+    </li>
+
+    <li>
+      Сокращённая ссылка на внутреннюю страницу:
+      <a href="/about/">О сайте</a>
+    </li>
+
+    <li>
+      Сокращённая ссылка на главную страницу:
+      <a href="/">Главная</a>
+    </li>
+
+    <li>
+      Ссылка на фрагмент текущей страницы (переход к форме):
+      <a href="#form-section">Перейти к форме</a>
+    </li>
+
+    <li>
+      Ссылка с тремя параметрами в URL:
+      <a href="/search?query=web&sort=asc&page=1">Поиск с параметрами</a>
+    </li>
+
+    <li>
+      Ссылка с параметром id в URL:
+      <a href="/item?id=42">Товар №42</a>
+    </li>
+
+    <li>
+      Относительная ссылка на страницу в текущем каталоге:
+      <a href="./contacts.html">Контакты</a>
+    </li>
+
+    <li>
+      Относительная ссылка на страницу в каталоге about:
+      <a href="./about/index.html">О нас</a>
+    </li>
+
+    <li>
+      Относительная ссылка на страницу в каталоге уровнем выше:
+      <a href="../index.html">На уровень выше</a>
+    </li>
+
+    <li>
+      Относительная ссылка на страницу двумя уровнями выше:
+      <a href="../../index.html">На два уровня выше</a>
+    </li>
+
+    <li>
+      Контекстная ссылка в тексте абзаца: подробнее о верстке форм можно
+      прочитать в <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/form">документации MDN по элементу form</a>,
+      которая пригодится при выполнении задания.
+    </li>
+
+    <li>
+      Ссылка на фрагмент страницы стороннего сайта:
+      <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/input#%D1%82%D0%B8%D0%BF%D1%8B_%3Cinput%3E">Типы input на MDN</a>
+    </li>
+
+    <li>
+      Ссылки из областей картинки (тег map):
+      <img src="image.jpg" alt="Карта ссылок" usemap="#linkmap" style="width: 300px;" />
+      <map name="linkmap">
+        <area shape="rect" coords="0,0,150,150" href="https://kubsu.ru/" alt="Прямоугольная область" />
+        <area shape="circle" coords="220,75,60" href="https://developer.mozilla.org/" alt="Круглая область" />
+      </map>
+    </li>
+
+    <li>
+      Ссылка с пустым href:
+      <a href="">Пустая ссылка</a>
+    </li>
+
+    <li>
+      Ссылка без href:
+      <a>Ссылка без href</a>
+    </li>
+
+    <li>
+      Ссылка, по которой запрещён переход поисковикам (rel="nofollow"):
+      <a href="https://example.com/promo" rel="nofollow">Партнёрская ссылка</a>
+    </li>
+
+    <li>
+      Ссылка, запрещённая для индексации поисковиками:
+      <!--noindex-->
+      <a href="https://example.com/private">Непубличная страница</a>
+      <!--/noindex-->
+    </li>
+
+    <li>
+      Нумерованный список ссылок с подписями title:
+      <ol>
+        <li><a href="/docs/html" title="Справочник по языку HTML">HTML</a></li>
+        <li><a href="/docs/css" title="Справочник по каскадным таблицам стилей">CSS</a></li>
+        <li><a href="/docs/js" title="Справочник по языку JavaScript">JavaScript</a></li>
+      </ol>
+    </li>
+
+    <li>
+      Ссылка на файл на FTP-сервере с авторизацией:
+      <a href="ftp://user:password@ftp.example.com/files/report.pdf">Скачать файл по FTP</a>
+    </li>
+
+  </ol>
+
+  <h1 id="form-section">Форма</h1>
+
+  <form action="/" method="POST">
+
+    <label>
+      ФИО:<br />
+      <input type="text" name="full-name" placeholder="Введите ФИО" />
+    </label><br /><br />
+
+    <label>
+      Телефон:<br />
+      <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" />
+    </label><br /><br />
+
+    <label>
+      E-mail:<br />
+      <input type="email" name="email" placeholder="Введите вашу почту" />
+    </label><br /><br />
+
+    <label>
+      Дата рождения:<br />
+      <input type="date" name="birth-date" />
+    </label><br /><br />
+
+    Пол:<br />
+    <label><input type="radio" name="gender" value="male" checked="checked" /> Мужской</label>
+    <label><input type="radio" name="gender" value="female" /> Женский</label><br /><br />
+
+    <label>
+      Любимый язык программирования (можно выбрать несколько):<br />
+      <select name="fav-lang[]" multiple="multiple">
+        <option value="Pascal">Pascal</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="JavaScript" selected="selected">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Python" selected="selected">Python</option>
+        <option value="Java">Java</option>
+        <option value="Haskell">Haskell</option>
+        <option value="Clojure">Clojure</option>
+        <option value="Prolog">Prolog</option>
+        <option value="Scala">Scala</option>
+      </select>
+    </label><br /><br />
+
+    <label>
+      Биография:<br />
+      <textarea name="biography" rows="5" cols="40"></textarea>
+    </label><br /><br />
+
+    <label>
+      <input type="checkbox" name="contract-agreed" /> С контрактом ознакомлен(а)
+    </label><br /><br />
+
+    <input type="submit" value="Сохранить" />
+
+  </form>
+
+</body>
+
+</html>

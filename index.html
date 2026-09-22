@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Название сайта</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <img class="logo" src="logo.jpg" alt="Логотип сайта">
+
+    <h1 class="site-title">Название сайта</h1>
+  </header>
+
+  <nav id="main-nav">
+    <ul class="menu">
+      <li><a href="#">Ссылка меню 1</a></li>
+      <li><a href="#">Ссылка 2</a></li>
+      <li><a href="#">Ссылка 3</a></li>
+    </ul>
+  </nav>
+
+  <main id="content">
+    <h2>Таблица</h2>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Колонка 1</th>
+          <th>Колонка 2</th>
+          <th>Колонка 3</th>
+          <th>Колонка 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-odd">
+          <td colspan="4">Объединенная строка (шапка раздела)</td>
+        </tr>
+        <tr class="row-even">
+          <td>Ячейка 21</td>
+          <td>Ячейка 22</td>
+          <td>Ячейка 23</td>
+          <td>Ячейка 24</td>
+        </tr>
+        <tr class="row-odd">
+          <td>Ячейка 31</td>
+          <td colspan="2">Ячейка 32 объединенная с 33</td>
+          <td>Ячейка 34</td>
+        </tr>
+        <tr class="row-even">
+          <td>Ячейка 41</td>
+          <td>Ячейка 42</td>
+          <td>Ячейка 43</td>
+          <td>Ячейка 44</td>
+        </tr>
+        <tr class="row-odd">
+          <td>Ячейка 51</td>
+          <td>Ячейка 52</td>
+          <td>Ячейка 53</td>
+          <td>Ячейка 54</td>
+        </tr>
+        <tr class="row-even">
+          <td colspan="4">Ячейка 61 объединенная по всей строке</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; Сергей Синица</p>
+  </footer>
+
+</body>
+</html>

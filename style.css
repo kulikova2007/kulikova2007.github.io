@@ -1,0 +1,115 @@
+/* Общие настройки */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+a {
+  color: #2255aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Шапка — на всю ширину окна */
+#site-header {
+  width: 100%;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#site-header .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#site-header .site-title {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+/* Меню — ограничено 960px, по центру */
+#main-nav {
+  width: 100%;
+  background-color: #34495e;
+}
+
+#main-nav .menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#main-nav .menu li a {
+  display: block;
+  padding: 12px 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+#main-nav .menu li a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* Контент — ограничен 960px, по центру */
+#content {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Таблица */
+#data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#data-table th,
+#data-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#data-table thead th {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+#data-table .row-odd {
+  background-color: #f4f6f7;
+}
+
+#data-table .row-even {
+  background-color: #e0e6e8;
+}
+
+/* Подвал — на всю ширину окна */
+#site-footer {
+  width: 100%;
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: 30px;
+}
